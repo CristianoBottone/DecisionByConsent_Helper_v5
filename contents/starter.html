@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cominciamo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../index.html" data-text="navLanguage">Lingua</a>
+            <a href="starter.html" data-text="navStart">Cominciamo</a>
+            <a href="preparation.html" data-text="navPreparation">Preparazione</a>
+            <a href="driver.html" data-text="navDriver">Driver</a>
+            <a href="proposal.html" data-text="navProposal">Proposta</a>
+            <a href="clarifications.html" data-text="navClarifications">Chiarimenti</a>
+            <a href="reactions.html" data-text="navReactions">Reazioni</a>
+            <a href="objections.html" data-text="navObjections">Obiezioni</a>
+            <a href="concerns.html" data-text="navConcerns">Preoccupazioni</a> |
+            <a href="#" id="downloadBtn" data-text="navSave">Salva</a>
+        </div>
+
+        <h1 data-text="starterTitle">Cominciamo</h1>
+        <div class="language-selection">
+            <button type="button" id="newActivityBtn" data-text="btnNewActivity">Nuova attività</button>
+            <button type="button" id="uploadBtn" data-text="btnLoadActivity">Carica un'attività</button>
+            <input type="file" id="fileInput" accept=".json" style="display: none;">
+        </div>
+
+
+    </div>
+
+    <script src="../js/dictionary.js"></script>
+    <script src="../js/save.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Carica la lingua salvata
+        updatePageTexts();
+
+        // Gestione pulsante Nuova attività
+        document.getElementById('newActivityBtn').addEventListener('click', function () {
+            const hasData = localStorage.getItem('personList') && JSON.parse(localStorage.getItem('personList')).length > 0;
+
+            if (hasData) {
+                if (confirm(getText('confirmNewActivity'))) {
+                    // Cancella tutti i dati tranne la lingua
+                    const currentLang = localStorage.getItem('language');
+                    localStorage.clear();
+                    if (currentLang) {
+                        localStorage.setItem('language', currentLang);
+                    }
+                    window.location.href = 'preparation.html';
+                }
+            } else {
+                window.location.href = 'preparation.html';
+            }
+        });
+    </script>
+</body>
+
+</html>

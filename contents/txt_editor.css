@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    flex: 1;
+    min-height: 0;
+}
+
+.editor {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor .ql-toolbar {
+    flex-shrink: 0;
+}
+
+.editor .ql-container {
+    flex: 1;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.editor .ql-editor {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Quill editor font size */
+.ql-editor {
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-y: auto;
+}
+
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul {
+    font-size: 18px;
+}

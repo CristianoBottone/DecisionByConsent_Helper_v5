@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./txt_editor.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../index.html" data-text="navLanguage">Lingua</a>
+            <a href="starter.html" data-text="navStart">Cominciamo</a>
+            <a href="preparation.html" data-text="navPreparation">Preparazione</a>
+            <a href="driver.html" data-text="navDriver">Driver</a>
+            <a href="proposal.html" data-text="navProposal">Proposta</a>
+            <a href="clarifications.html" data-text="navClarifications">Chiarimenti</a>
+            <a href="reactions.html" data-text="navReactions">Reazioni</a>
+            <a href="objections.html" data-text="navObjections">Obiezioni</a>
+            <a href="concerns.html" data-text="navConcerns">Preoccupazioni</a> |
+            <a href="#" id="downloadBtn" data-text="navSave">Salva</a>
+        </div>
+
+        <h1 data-text="driverTitle">Driver</h1>
+
+        <div class="wrapper">
+            <div class="editor">
+                <div id="driver-editor"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/dictionary.js"></script>
+    <script src="../js/save.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="../js/txt_editor.js"></script>
+    <script>
+        // Carica la lingua salvata
+        updatePageTexts();
+
+        // Inizializza l'editor Quill
+        initQuillEditor('driver-editor', 'driverContent');
+    </script>
+
+</body>
+
+</html>

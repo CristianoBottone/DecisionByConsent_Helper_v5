@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Page</title>
+    <link rel="stylesheet" href="contents/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="../index.html" data-text="navLanguage">Lingua</a>
+            <a href="contents/clarifications.html" data-text="navStart">Cominciamo</a>
+            <a href="contents/preparation.html" data-text="navPreparation">Preparazione</a>
+            <a href="contents/driver.html" data-text="navDriver">Driver</a>
+            <a href="contents/proposal.html" data-text="navProposal">Proposta</a>
+            <a href="contents/clarifications.html" data-text="navClarifications">Chiarimenti</a>
+            <a href="contents/reactions.html" data-text="navReactions">Reazioni</a>
+            <a href="contents/objections.html" data-text="navObjections">Obiezioni</a>
+            <a href="contents/concerns.html" data-text="navConcerns">Preoccupazioni</a> |
+            <a href="#" id="downloadBtn" data-text="navSave">Salva</a>
+        </div>
+
+        <h1 data-text="languageTitle">Scegli una lingua / Choose a language</h1>
+        <div class="language-selection">
+            <form id="languageForm">
+                <button type="button" data-lang="it" data-text="languageItalian">Italiano</button>
+                <button type="button" data-lang="en" data-text="languageEnglish">English</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/dictionary.js"></script>
+    <script src="js/save.js"></script>
+    <script>
+        // Gestione selezione lingua
+        document.getElementById('languageForm').addEventListener('click', function (e) {
+            if (e.target.tagName === 'BUTTON') {
+                const selectedLang = e.target.getAttribute('data-lang');
+                if (setLanguage(selectedLang)) {
+                    // Aggiorna i testi con la nuova lingua
+                    updatePageTexts();
+                    // Attendi un attimo per mostrare il cambio, poi reindirizza
+                    setTimeout(() => {
+                        window.location.href = 'contents/starter.html';
+                    }, 300);
+                }
+            }
+        });
+
+        // Carica la lingua salvata all'avvio
+        updatePageTexts();
+    </script>
+
+</body>
+
+</html>
+
+</html>
