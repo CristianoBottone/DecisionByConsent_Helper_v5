@@ -3,9 +3,10 @@
 const dictionary = {
     it: {
         // Pagina di selezione lingua
-        languageTitle: "Scegli una lingua / Choose a language",
+        languageTitle: "Scegli una lingua / Choose a language / Välj ett språk",
         languageItalian: "Italiano",
         languageEnglish: "English",
+        languageSwedish: "Svenska",
 
         // Navbar
         navLanguage: "Lingua",
@@ -69,6 +70,7 @@ const dictionary = {
         readError: "Errore nella lettura del file",
         loadError: "Errore nel caricamento del file: ",
         confirmNewActivity: "Avviando una nuova attività tutti i dati dell'attività in corso verranno cancellati. Vuoi procedere?",
+        textEditorPlaceholder: "Inserisci il testo qui...",
 
         // Azioni
         download: "Scarica",
@@ -83,9 +85,10 @@ const dictionary = {
 
     en: {
         // Language selection page
-        languageTitle: "Scegli una lingua / Choose a language",
+        languageTitle: "Scegli una lingua / Choose a language / Välj ett språk",
         languageItalian: "Italiano",
         languageEnglish: "English",
+        languageSwedish: "Svenska",
 
         // Navbar
         navLanguage: "Language",
@@ -149,6 +152,7 @@ const dictionary = {
         readError: "Error reading file",
         loadError: "Error loading file: ",
         confirmNewActivity: "Starting a new activity will delete all data from the current activity. Do you want to proceed?",
+        textEditorPlaceholder: "Enter the text here ...",
 
         // Actions
         download: "Download",
@@ -159,6 +163,88 @@ const dictionary = {
         saveAsPDF: "Save as PDF",
         savePDFSuccess: "PDF downloaded successfully!",
         savePDFError: "Error saving PDF: "
+    },
+
+    sv: {
+        // Language selection page
+        languageTitle: "Scegli una lingua / Choose a language / Välj ett språk",
+        languageItalian: "Italiano",
+        languageEnglish: "English",
+        languageSwedish: "Svenska",
+
+        // Navbar
+        navLanguage: "Språk",
+        navStart: "Låt oss börja",
+        navPreparation: "Förberedelse",
+        navDriver: "Drivkraft",
+        navProposal: "Förslag",
+        navClarifications: "Förtydliganden",
+        navReactions: "Reaktioner",
+        navObjections: "Invändningar",
+        navConcerns: "Betänkligheter",
+        navSave: "Spara",
+
+        // Starter page
+        starterTitle: "Låt oss börja",
+        btnNewActivity: "Ny aktivitet",
+        btnLoadActivity: "Ladda en aktivitet",
+
+        // Preparation page
+        preparationTitle: "Lägg till deltagare",
+
+        // Driver/Proposal/Concerns pages
+        driverTitle: "Drivkraft",
+        proposalTitle: "Förslag",
+        concernsTitle: "Betänkligheter",
+        reactionsTitle: "Reaktioner",
+        objectionsTitle: "Invändningar",
+        clarificationsTitle: "Förtydliganden",
+        driverPlaceholder: "Skriv drivkraften här...",
+        proposalPlaceholder: "Skriv förslaget här...",
+        concernsPlaceholder: "Skriv betänkligheter eller anteckningar här...",
+        txteditorBold: "Fetstil",
+        txteditorItalic: "Kursiv",
+        txteditorBlack: "Svart",
+        txteditorRed: "Röd",
+        txteditorBlue: "Blå",
+        txteditorHighlighted: "Markerad",
+
+        // Form
+        formName: "Förnamn",
+        formSurname: "Efternamn",
+        btnAdd: "Lägg till",
+        btnEdit: "Redigera",
+        btnDelete: "Ta bort",
+
+        // Table
+        tableName: "Namn",
+        tableActions: "Åtgärder",
+        btnUpdate: "Uppdatera",
+
+        // Messages
+        emptyState: "Inga data tillgängliga. Lägg till det första namnet!",
+        emptyParticipants: "Inga deltagare. Gå till Förberedelse för att lägga till några.",
+        alertRequired: "Ange namnet",
+        confirmDelete: "Är du säker på att du vill ta bort den här personen?",
+        noDataToDownload: "Inga data att ladda ner",
+        loadSuccess: "personer har laddats!",
+        fileError: "Filen måste innehålla en lista med personer",
+        personError: "Varje person måste ha ett namn",
+        confirmReplace: "Det finns redan sparade data. Vill du ersätta dem med data från filen?",
+        readError: "Fel vid läsning av filen",
+        loadError: "Fel vid inläsning av filen: ",
+        confirmNewActivity: "Om du startar en ny aktivitet raderas alla data från den nuvarande aktiviteten. Vill du fortsätta?",
+        textEditorPlaceholder: "Skriv texten här...",
+
+        // Actions
+        download: "Ladda ner",
+        upload: "Ladda upp",
+
+        // Save options
+        saveAsJSON: "Spara som JSON",
+        saveAsPDF: "Spara som PDF",
+        savePDFSuccess: "PDF-filen har laddats ner!",
+        savePDFError: "Fel vid sparande av PDF: "
     }
 };
 

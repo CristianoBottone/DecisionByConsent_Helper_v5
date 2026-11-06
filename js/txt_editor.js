@@ -43,7 +43,7 @@ function initQuillEditor(containerId, storageKey) {
     modules: {
       toolbar: toolbarOptions,
     },
-    placeholder: 'Inserisci il testo qui...'
+    placeholder: getText('textEditorPlaceholder')
   });
 
   // Carica il contenuto salvato
