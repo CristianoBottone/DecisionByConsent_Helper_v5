@@ -8,7 +8,7 @@
 
 ### Caratteristiche Principali
 
-- ✅ **Multilingua**: Interfaccia disponibile in Italiano e Inglese
+- ✅ **Multilingua**: Interfaccia disponibile in Italiano, Inglese e Svedese
 - 👥 **Gestione Partecipanti**: Aggiungi, modifica ed elimina i partecipanti
 - 📝 **Editor di Testo Formattato**: Scrivi e formatta testi con grassetto, corsivo, colori ed evidenziazioni
 - 💾 **Doppio Formato di Salvataggio**: 
@@ -22,7 +22,7 @@
 
 All'apertura dell'applicazione (`index.html`), scegli la lingua preferita:
 
-- Clicca su **Italiano** o **English**
+- Clicca su **Italiano**, **English** o **Svenska**
 - La scelta verrà salvata automaticamente per le sessioni future
 
 #### 2. **Avvio Attività**
@@ -152,7 +152,7 @@ DecisionByConsent(js)/
 
 ### Main Features
 
-- ✅ **Multilingual**: Interface available in Italian and English
+- ✅ **Multilingual**: Interface available in Italian, English and Swedish
 - 👥 **Participant Management**: Add, edit and delete participants
 - 📝 **Formatted Text Editor**: Write and format text with bold, italic, colors and highlighting
 - 💾 **Dual Save Format**: 
@@ -166,7 +166,7 @@ DecisionByConsent(js)/
 
 When opening the application (`index.html`), choose your preferred language:
 
-- Click on **Italiano** or **English**
+- Click on **Italiano**, **English** or **Svenska**
 - Your choice will be automatically saved for future sessions
 
 #### 2. **Starting Activity**
@@ -288,28 +288,172 @@ DecisionByConsent(js)/
 
 ---
 
-## 🚀 Avvio Rapido / Quick Start
+## 🇸🇪 Svenska
 
-### Aprire l'applicazione / Open the application
+### Beskrivning
 
-1. Apri `index.html` nel browser / Open `index.html` in your browser
-2. Scegli la lingua / Choose language
-3. Vai su "Cominciamo" → "Nuova attività" / Go to "Let's Begin" → "New Activity"
-4. Inizia ad usare l'app! / Start using the app!
+**Decision by Consent** är en webbapplikation som underlättar beslutsfattande enligt metoden Sociocracy 3.0. Den hjälper dig att hantera deltagare, dokumentera förslag och samla in förtydliganden, reaktioner, invändningar och farhågor på ett strukturerat sätt.
 
-### Salvare i dati / Save data
+### Huvudfunktioner
 
-- Clicca "Salva" in alto a destra in qualsiasi momento / Click "Save" in the top right at any time
-- Scegli **JSON** per ricaricare i dati o **PDF** per documenti leggibili / Choose **JSON** to reload data or **PDF** for readable documents
+- ✅ **Flerspråkigt gränssnitt**: Tillgängligt på italienska, engelska och svenska
+- 👥 **Deltagarhantering**: Lägg till, redigera och ta bort deltagare
+- 📝 **Formaterad textredigerare**: Skriv och formatera text med fetstil, kursiv stil, färger och markeringar
+- 💾 **Två sparformat**:
+  - **JSON**: För att läsa in och fortsätta arbeta med sessionen
+  - **PDF**: Ett lättläst och utskriftsvänligt dokument med professionell formatering
+- 🔄 **Automatisk sparning**: Innehållet sparas automatiskt medan du skriver
+
+### Kom igång
+
+#### 1. **Välj språk**
+
+När du öppnar applikationen (`index.html`) väljer du önskat språk:
+
+- Klicka på **Italiano**, **English** eller **Svenska**
+- Ditt val sparas automatiskt inför kommande sessioner
+
+#### 2. **Starta en aktivitet**
+
+På sidan **Kom igång** (`starter.html`):
+
+- **Ny aktivitet**: Starta en ny beslutsprocess (föregående data raderas)
+- **Läs in en aktivitet**: Importera en JSON-fil som du har sparat tidigare
+
+#### 3. **Förberedelser**
+
+På sidan **Förberedelser** (`preparation.html`):
+
+- Ange deltagarnas namn (separera flera namn med kommatecken)
+- Klicka på **Lägg till** för att spara dem
+- Du kan redigera eller ta bort deltagare i tabellen
+
+#### 4. **Drivkraft**
+
+På sidan **Drivkraft** (`driver.html`):
+
+- Skriv den spänning eller det behov som ligger bakom beslutet
+- Använd formateringsknapparna för att anpassa texten:
+  - **F** = Fetstil
+  - **K** = Kursiv stil
+  - **Färger**: Röd, blå och svart
+  - **Markering**: Gul bakgrund
+- Texten sparas automatiskt medan du skriver
+
+#### 5. **Förslag**
+
+På sidan **Förslag** (`proposal.html`):
+
+- Skriv ett detaljerat beslutsförslag
+- Använd samma formateringsverktyg som för Drivkraft
+
+#### 6. **Förtydliganden**
+
+På sidan **Förtydliganden** (`clarifications.html`):
+
+- Ett fält skapas för varje deltagare
+- Klicka på knappen **+/-** för att visa eller dölja respektive fält
+- Skriv varje deltagares frågor eller önskemål om förtydliganden
+
+#### 7. **Reaktioner**
+
+På sidan **Reaktioner** (`reactions.html`):
+
+- Samla in varje deltagares första reaktion på förslaget
+- Varje deltagare har ett eget textfält
+
+#### 8. **Invändningar**
+
+På sidan **Invändningar** (`objections.html`):
+
+- Dokumentera eventuella invändningar från deltagarna
+- Invändningar är skäl till att förslaget kan orsaka skada
+- eller möjligheter att förbättra förslaget väsentligt
+
+#### 9. **Farhågor**
+
+På sidan **Farhågor** (`concerns.html`):
+
+- Skriv allmänna farhågor eller ytterligare anteckningar
+- Använd den formaterade textredigeraren på samma sätt som för Drivkraft och Förslag
+
+#### 10. **Spara**
+
+Klicka på **Spara** i menyn längst upp på valfri sida och välj format:
+
+- **Spara som JSON**: Filen `Decisione_YYYY-MM-DD.json` kan användas för att läsa in data igen
+  - Innehåller alla data: språk, deltagare och innehåll
+  - Kan läsas in med **Läs in en aktivitet**
+
+- **Spara som PDF**: Det lättlästa dokumentet `Decisione_YYYY-MM-DD.pdf`
+  - Professionellt format med tydligt organiserade avsnitt
+  - Innehåller datum, språk och allt innehåll
+  - Deltagartabell med formatering
+  - Passar för dokumentation, utskrift och delning
+
+### Filstruktur
+
+```
+DecisionByConsent(js)/
+├── index.html              # Sida för språkval
+├── contents/               # Applikationens sidor
+│   ├── style.css          # CSS-formatmallar
+│   ├── starter.html       # Starta eller läsa in en aktivitet
+│   ├── preparation.html   # Deltagarhantering
+│   ├── driver.html        # Spänning/Drivkraft
+│   ├── proposal.html      # Förslag
+│   ├── clarifications.html # Förtydliganden per deltagare
+│   ├── reactions.html     # Reaktioner per deltagare
+│   ├── objections.html    # Invändningar per deltagare
+│   └── concerns.html      # Allmänna farhågor
+└── js/                    # JavaScript-filer
+    ├── dictionary.js      # Översättningar
+    ├── main.js            # Applikationens huvudlogik
+    ├── save.js            # Skapar PDF-filer
+    ├── txt_editor.js      # Formaterad textredigerare
+    └── participants_inputs.js # Hantering av deltagarinmatning
+```
+
+### Tekniska krav
+
+- En modern webbläsare (Chrome, Firefox, Safari eller Edge)
+- JavaScript aktiverat
+- LocalStorage aktiverat (för automatisk sparning)
+- Internetanslutning (för jsPDF-biblioteket via CDN)
+
+### Viktigt
+
+- ⚠️ Data sparas lokalt i webbläsaren (localStorage)
+- 💾 Exportera dina data regelbundet med knappen **Spara**
+- 📄 **Spara som PDF** för permanent dokumentation och delning
+- 💿 **Spara som JSON** för att fortsätta redigera sessionen
+- 🔄 Du kan öppna sparade JSON-filer med **Läs in en aktivitet**
+- 🗑️ **Ny aktivitet** raderar alla befintliga data (du ombeds bekräfta)
 
 ---
 
-## 📄 Licenza / License
+## 🚀 Avvio Rapido / Quick Start / Snabbstart
 
-Questo progetto è open source. / This project is open source
+### Aprire l'applicazione / Open the application / Öppna applikationen
+
+1. Apri `index.html` nel browser / Open `index.html` in your browser / Öppna `index.html` i webbläsaren
+2. Scegli la lingua (**Italiano**, **English** o **Svenska**) / Choose a language (**Italiano**, **English** or **Svenska**) / Välj språk (**Italiano**, **English** eller **Svenska**)
+3. Vai su "Cominciamo" → "Nuova attività" / Go to "Let's Begin" → "New Activity" / Gå till "Kom igång" → "Ny aktivitet"
+4. Inizia ad usare l'app! / Start using the app! / Börja använda appen!
+
+### Salvare i dati / Save data / Spara data
+
+- Clicca "Salva" in alto a destra in qualsiasi momento / Click "Save" in the top right at any time / Klicka på "Spara" uppe till höger när som helst
+- Scegli **JSON** per ricaricare i dati o **PDF** per documenti leggibili / Choose **JSON** to reload data or **PDF** for readable documents / Välj **JSON** för att läsa in data igen eller **PDF** för ett lättläst dokument
+
+---
+
+## 📄 Licenza / License / Licens
+
+Questo progetto è open source. / This project is open source / Det här projektet är open source.
 by Cristiano Bottone - Transition Italia
 cristiano.bottone@transitionitalia.it
 
-## 👨‍💻 Sviluppo / Development
+## 👨‍💻 Sviluppo / Development / Utveckling
 
-Creato con HTML5, CSS3 e JavaScript vanilla. / Created with HTML5, CSS3 and vanilla JavaScript.
+Creato con HTML5, CSS3 e JavaScript vanilla. / Created with HTML5, CSS3 and vanilla JavaScript. / Skapat med HTML5, CSS3 och vanilla JavaScript.
